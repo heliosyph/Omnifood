@@ -52,6 +52,7 @@ paragraph default: 1.6
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -59,6 +60,10 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing
+   absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /********************************/
@@ -141,6 +146,7 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
+
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
   border-radius: 9px;
